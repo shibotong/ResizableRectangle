@@ -1,3 +1,3 @@
 # ResizableRectangle
 
-A description of this package.
+Swift Version

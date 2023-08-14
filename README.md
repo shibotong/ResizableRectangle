@@ -4,6 +4,10 @@
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20watchOS-blue)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+
+https://github.com/shibotong/ResizableRectangle/assets/44807628/a535c3ba-d26d-4bc3-90bd-0f685b3be221
+
+
 ## Features
 
 - Create resizable rectangles with adjustable width and height.
@@ -20,9 +24,13 @@ You can install ResizableRectangle using Swift Package Manager:
 
 ## Usage
 
-To use ResizableRectangle in your SwiftUI views, follow these steps:
-
-1. Import the ResizableRectangle module:
-
 ```swift
 import ResizableRectangle
+struct ContentView: View {
+
+    @State var rectSize: CGRect = .zero
+    var body: some View {
+        ResizableRectangle(rect: $rectSize)
+    }
+}
+```
